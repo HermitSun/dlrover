@@ -23,9 +23,6 @@ install_requires = [
 
 
 extra_require = {
-    "k8s": ["kubernetes"],
-    "ray": ["ray"],
-    "tensorflow": ["tensorflow"],
     "torch": ["torch"],
 }
 
@@ -46,15 +43,4 @@ setup(
     extras_require=extra_require,
     python_requires=">=3.8",
     packages=find_packages(),
-    package_data={
-        "": [
-            "proto/*",
-            "docker/*",
-            "Makefile",
-            "trainer/check/*",
-        ]
-    },
-    entry_points={
-        "console_scripts": ["dlrover-run=dlrover.trainer.torch.main:main"]
-    },
 )
