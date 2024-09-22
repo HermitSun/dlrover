@@ -8,18 +8,11 @@ install_requires = [
     "deprecated",
 ]
 
-
-extra_require = {
-    "torch": ["torch"],
-}
-
-
 setup(
     name="sftrain",
     version="0.0.1",
-    description="An Automatic Distributed Deep Learning Framework",
+    description="SiFlow Distributed Training Plugin",
     install_requires=install_requires,
-    extras_require=extra_require,
     python_requires=">=3.8",
     packages=find_packages(),
 )
